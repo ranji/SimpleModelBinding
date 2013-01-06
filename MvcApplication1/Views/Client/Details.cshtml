@@ -1,0 +1,23 @@
+﻿@model MvcApplication1.Models.Client
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Client</legend>
+    <table>
+        <tr>
+            <th> @Html.DisplayFor(model => model.ColumnHeading1)</th>
+            <th> @Html.DisplayFor(model => model.ColumnHeading2)</th>
+            <th>@Html.DisplayFor(model => model.ColumnHeading3)</th>
+        </tr>
+    </table>
+  
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
